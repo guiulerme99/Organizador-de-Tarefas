@@ -21,19 +21,28 @@ body {
 .conteudos {
     display: grid;
     grid-template-columns: auto auto auto;
+    margin: 3%;
+    column-gap: 2%;
 }
 
 .grid {
+    padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: lightgray;
+    border-radius: 10px;
 }
 
 .header {
-    width: 90%;
-    background-color: white;
+    font-size: 30px;
     color: black;
-    border-radius: 30px;
     text-align: center;
-    padding: 5%;
+}
+
+.add {
+    align-self: start;
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
 }
