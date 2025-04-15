@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .conteudos {
@@ -12,4 +13,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.header {
+    width: 90%;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5%;
 }
