@@ -10,6 +10,15 @@ body {
     background-repeat: no-repeat;
 }
 
+h1 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
 .blur {
     position: absolute;
     width: 100%;
