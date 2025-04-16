@@ -133,12 +133,123 @@ body {
 #items {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     height: 100%;
     background-color: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     margin: 20px;
-    width: 80%;
+    width: 85%;
+}
+
+#prioridade-fazer {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+}
+
+#tarefa-fazer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgba(175, 175, 175, 0.3);
+    border-radius: 10px;
+}
+
+#data-inicio-fazer {
+    display: flex;
+    justify-content: right;
+    color: black;
+}
+
+#data-prazo-fazer {
+    display: flex;
+    justify-content: right;
+    color: black;
+}
+
+#descricao-fazer {
+    display: flex;
+    color: black;
+}
+
+#prioridade-andamento {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    border-radius: 30px;
+}
+
+#tarefa-andamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgba(175, 175, 175, 0.3);
+    border-radius: 10px;
+}
+
+#data-inicio-andamento {
+    display: flex;
+    justify-content: right;
+    color: black;
+}
+
+#data-prazo-andamento {
+    display: flex;
+    justify-content: right;
+    color: black;
+}
+
+#descricao-andamento {
+    display: flex;
+    color: black;
+}
+
+#prioridade-concluido {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9, 233, 9);
+    color: white;
+    border-radius: 30px;
+}
+
+#tarefa-concluido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgba(175, 175, 175, 0.3);
+    border-radius: 10px;
+}
+
+#data-inicio-concluido {
+    display: flex;
+    justify-content: right;
+    color: black;
+}
+
+#data-prazo-concluido {
+    display: flex;
+    justify-content: right;
+    color: black;
+}
+
+#descricao-concluido {
+    display: flex;
+    color: black;
 }
