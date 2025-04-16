@@ -12,7 +12,7 @@ body {
 
 .titulo {
     font-family: "Poppins", sans-serif;
-    color: white;
+    color: black;
     font-size: 50px;
     text-align: center;
     padding-top: 10px;
@@ -40,7 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightgray;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 }
 
@@ -56,7 +56,7 @@ body {
 .add {
     align-self: start;
     font-size: 20px;
-    color: gray;
+    color: black;
     cursor: pointer;
     margin-top: 10px;
     padding: 5px 10px;
@@ -67,25 +67,14 @@ body {
 .add:hover {
     color: black;
     background-color: #f0f0f0;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     transform: translateY(-2px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.adicionar {
-    display: none;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    backdrop-filter: blur(5px);
-    background-color: rgba(0,0,0,0.5);
-    justify-content: center;
-    align-items: center;
-}
-
 .container-adicionar {
     position: relative;
-    background-color: lightgray;
+    background-color: rgba(255, 255, 255, 0.4);
     height: 500px;
     width: 500px;
     border-radius: 10px;
@@ -100,14 +89,6 @@ body {
     background-color: rgba(0,0,0,0.5);
     justify-content: center;
     align-items: center;
-}
-
-.container-adicionar {
-    position: relative;
-    background-color: lightgray;
-    height: 500px;
-    width: 500px;
-    border-radius: 10px;
 }
 
 .titulo-adicionar {
