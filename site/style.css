@@ -57,11 +57,17 @@ body {
     color: gray;
     cursor: pointer;
     margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
     transition: color 0.3s ease;
 }
 
 .add:hover {
     color: black;
+    background-color: #f0f0f0;
+    text-decoration: underline;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .adicionar {
