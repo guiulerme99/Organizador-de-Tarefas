@@ -16,5 +16,6 @@ function fechar() {
 }
 
 function cartao(y) {
-    
+    valor = document.getElementById("prazo").value
+    alert(valor)
 }
