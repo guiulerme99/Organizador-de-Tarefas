@@ -58,8 +58,8 @@ body {
     cursor: pointer;
 }
 
-.adicionar {
-    display: none;
+#adicionar {
+    display: flex;
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -75,4 +75,43 @@ body {
     height: 500px;
     width: 500px;
     border-radius: 10px;
+}
+
+.titulo-adicionar {
+    padding: 5%;
+}
+
+.abrir {
+    width: 100%;
+    text-align: center;
+}
+
+.fechar {
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+.campos-item {
+    aspect-ratio: 1/0.5;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descricao textarea {
+    width: 80%;
+    height: 170px;
 }
