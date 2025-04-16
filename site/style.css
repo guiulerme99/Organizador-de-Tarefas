@@ -39,6 +39,7 @@ h1 {
 }
 
 .header {
+    font-family: "Poppins", sans-serif;
     width: 90%;
     background-color: white;
     color: black;
