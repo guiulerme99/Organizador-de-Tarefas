@@ -17,29 +17,36 @@
             <div class="container-adicionar">
                 <div class="titulo-adicionar">
                     <div class="fechar" onclick="fechar()"><h1>X</h1></div>
-                    <div class="abrir"><h1>Título</h1></div>
+                    <div class="abrir"><h1 id="valor-titulo"></h1></div>
                 </div>
                 <div class="campos">
-                    <div class="campos-item tarefa">
+                    <div class="campos-item" id="tarefa">
                         <label for="">Tarefa</label>
                         <input type="text">
                     </div>
-                    <div class="campos-item tarefa">
+                    <div class="campos-item" id="prioridade">
                         <label for="">Prioridade</label>
-                        <input type="text">
+                        <select name="" id="opcoes">
+                            <option value="">Baixa</option>
+                            <option value="">Média</option>
+                            <option value="">Alta</option>
+                        </select>
                     </div>
-                    <div class="campos-item tarefa">
+                    <div class="campos-item" id="inicio">
                         <label for="">Data de início</label>
-                        <input type="text">
+                        <input type="date">
                     </div>
-                    <div class="campos-item tarefa">
+                    <div class="campos-item" id="prazo">
                         <label for="">Prazo</label>
-                        <input type="text">
+                        <input type="date">
                     </div>
                 </div>
-                <div class="descricao">
+                <div class="descricao" id="descricao">
                     <label for="">Descrição detalhada</label>
                     <textarea name="" id=""></textarea>
+                </div>
+                <div class="adicionar-button">
+                    <div>Adicionar</div>
                 </div>
             </div>
         </section>
@@ -53,21 +60,21 @@
                     <div class="header">A Fazer</div>
                     <div id="items">
                 </div>
-                <div class="add" onclick="adicionar()">+ Adicionar cartão</div>
+                <div class="add" onclick="adicionar(1)">+ Adicionar cartão</div>
             </div>
             <div class="grid andamento">
                 <div class="header">Em andamento</div>
                 <div id="items">
 
                 </div>
-                <div class="add" onclick="adicionar()">+ Adicionar cartão</div>
+                <div class="add" onclick="adicionar(2)">+ Adicionar cartão</div>
             </div>
             <div class="grid concluido">
                 <div class="header">Concluido</div>
                 <div id="items">
 
                 </div>
-                <div class="add" onclick="adicionar()">+ Adicionar cartão</div>
+                <div class="add" onclick="adicionar(3)">+ Adicionar cartão</div>
             </div>
         </section>
     </main>
