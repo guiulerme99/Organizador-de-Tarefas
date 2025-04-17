@@ -5,10 +5,14 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
+.fundo {
+    position: fixed;
     background-image: url("https://c.pxhere.com/images/43/c4/0112b90aa1bdeb93519d14635f52-1593078.jpg!d");
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
 }
 
 .titulo {
@@ -22,7 +26,7 @@ body {
 }
 
 .blur {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     backdrop-filter: blur(5px);
@@ -46,12 +50,16 @@ body {
 }
 
 .header {
-    font-family: "Poppins", sans-serif;
     width: 90%;
     font-size: 30px;
     color: black;
     text-align: center;
     font-weight: 600;
+}
+
+#item-andamento, #item-fazer, #item-concluido {
+    width: 100%;
+    height: 100%;
 }
 
 .add {
@@ -74,7 +82,7 @@ body {
 }
 
 .container-adicionar {
-    position: relative;
+    position: fixed;
     background-color: rgba(255, 255, 255, 0.4);
     height: 560px;
     width: 500px;
@@ -83,7 +91,7 @@ body {
 
 #adicionar {
     display: none;
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100%;
     backdrop-filter: blur(5px);
@@ -140,6 +148,8 @@ body {
     margin-top: 10px;
     width: 80%;
     height: 170px;
+    outline: none;
+    padding: 2%;
 }
 
 .adicionar-button {
@@ -154,12 +164,12 @@ body {
     cursor: pointer;
 }
 
-#items {
+.items {
     display: flex;
     flex-direction: column;
     /* align-items: center;
     justify-content: center; */
-    height: 100%;
+    /* height: 100%; */
     background-color: white;
     border-radius: 10px;
     padding: 10px;
@@ -167,7 +177,7 @@ body {
     width: 85%;
 }
 
-#prioridade-fazer {
+#prioridade-item {
     display: flex;
     width: 20%;
     justify-content: center;
@@ -177,7 +187,7 @@ body {
     border-radius: 30px;
 }
 
-#tarefa-fazer {
+#tarefa-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -187,93 +197,24 @@ body {
     border-radius: 10px;
 }
 
-#data-inicio-fazer {
+#data-inicio-item {
     display: flex;
     justify-content: right;
     color: black;
 }
 
-#data-prazo-fazer {
+#data-prazo-item {
     display: flex;
     justify-content: right;
     color: black;
 }
 
-#descricao-fazer {
+#descricao-item {
     display: flex;
     color: black;
 }
 
-#prioridade-andamento {
-    display: flex;
-    width: 20%;
-    justify-content: center;
-    align-items: center;
-    background-color: orange;
-    color: white;
-    border-radius: 30px;
-}
-
-#tarefa-andamento {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin: 5px 0;
-    background-color: rgba(175, 175, 175, 0.3);
-    border-radius: 10px;
-}
-
-#data-inicio-andamento {
-    display: flex;
-    justify-content: right;
-    color: black;
-}
-
-#data-prazo-andamento {
-    display: flex;
-    justify-content: right;
-    color: black;
-}
-
-#descricao-andamento {
-    display: flex;
-    color: black;
-}
-
-#prioridade-concluido {
-    display: flex;
-    width: 20%;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(9, 233, 9);
-    color: white;
-    border-radius: 30px;
-}
-
-#tarefa-concluido {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin: 5px 0;
-    background-color: rgba(175, 175, 175, 0.3);
-    border-radius: 10px;
-}
-
-#data-inicio-concluido {
-    display: flex;
-    justify-content: right;
-    color: black;
-}
-
-#data-prazo-concluido {
-    display: flex;
-    justify-content: right;
-    color: black;
-}
-
-#descricao-concluido {
-    display: flex;
-    color: black;
+i {
+    margin-right: 20px;
+    cursor: pointer;
 }
