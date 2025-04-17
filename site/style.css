@@ -202,6 +202,7 @@ body {
 #descricao-fazer {
     display: flex;
     color: black;
+    width: 4%;
 }
 
 #prioridade-andamento {
@@ -239,6 +240,7 @@ body {
 #descricao-andamento {
     display: flex;
     color: black;
+    width: 4%;
 }
 
 #prioridade-concluido {
@@ -276,4 +278,5 @@ body {
 #descricao-concluido {
     display: flex;
     color: black;
+    width: 4%;
 }
