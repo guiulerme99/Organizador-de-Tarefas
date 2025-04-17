@@ -14,6 +14,7 @@
         <script src="https://kit.fontawesome.com/06393bcb76.js" crossorigin="anonymous"></script>
 </head>
     <body>
+        <div class="fundo"></div>
         <section id="adicionar">
             <div class="container-adicionar">
                 <div class="titulo-adicionar">
@@ -21,30 +22,30 @@
                     <div class="abrir"><h1 id="valor-titulo"></h1></div>
                 </div>
                 <div class="campos">
-                    <div class="campos-item" id="tarefa">
+                    <div class="campos-item">
                         <label for="">Tarefa</label>
-                        <input type="text">
+                        <input type="text" id="tarefa">
                     </div>
-                    <div class="campos-item" id="prioridade">
+                    <div class="campos-item">
                         <label for="">Prioridade</label>
                         <select name="" id="opcoes">
-                            <option value="">Baixa</option>
-                            <option value="">Média</option>
-                            <option value="">Alta</option>
+                            <option value="1">Baixa</option>
+                            <option value="2">Média</option>
+                            <option value="3">Alta</option>
                         </select>
                     </div>
-                    <div class="campos-item" id="inicio">
+                    <div class="campos-item">
                         <label for="">Data de início</label>
-                        <input type="date">
+                        <input type="date" id="inicio">
                     </div>
                     <div class="campos-item">
                         <label for="">Prazo</label>
                         <input type="date" id="prazo">
                     </div>
                 </div>
-                <div class="descricao" id="descricao">
+                <div class="descricao">
                     <label for="">Descrição detalhada</label>
-                    <textarea name="" id=""></textarea>
+                    <textarea name="" id="descricao"></textarea>
                 </div>
                 <div class="adicionar-button" onclick="cartao()">
                     <div>Adicionar</div>
@@ -58,35 +59,20 @@
         <main>
             <section class="conteudos">
                 <div class="grid fazer">
-                    <div class="header">A Fazer</div>
-                    <div id="items">
-                        <div id="prioridade-fazer">Alta</div>
-                        <div id="tarefa-fazer">Tarefa 1</div>
-                        <div id="data-inicio-fazer">Início: 23 Mar</div>
-                        <div id="data-prazo-fazer">Prazo: 04 Abr</div>
-                        <div id="descricao-fazer"><i class="fa-regular fa-comment"></i></div>
-                </div>
-                <div class="add" onclick="adicionar(1)">+ Adicionar cartão</div>
+                    <div class="header">À Fazer</div>
+                    <div id="item-fazer">
+                    </div>
+                    <div class="add" onclick="adicionar(1)">+ Adicionar cartão</div>
             </div>
             <div class="grid andamento">
-                    <div class="header">Em andamento</div>
-                    <div id="items">
-                        <div id="prioridade-andamento">Média</div>
-                        <div id="tarefa-andamento">Tarefa 1</div>
-                        <div id="data-inicio-andamento">Início: 23 Mar</div>
-                        <div id="data-prazo-andamento">Prazo: 04 Abr</div>
-                        <div id="descricao-andamento"><i class="fa-regular fa-comment"></i></div>
+                <div class="header">Em andamento</div>
+                <div id="item-andamento">
                 </div>
                 <div class="add" onclick="adicionar(2)">+ Adicionar cartão</div>
             </div>
             <div class="grid concluido">
-                    <div class="header">Concluido</div>
-                    <div id="items">
-                        <div id="prioridade-concluido">Baixa</div>
-                        <div id="tarefa-concluido">Tarefa 1</div>
-                        <div id="data-inicio-concluido">Início: 23 Mar</div>
-                        <div id="data-prazo-concluido">Prazo: 04 Abr</div>
-                        <div id="descricao-concluido"><i class="fa-regular fa-comment"></i></div>
+                <div class="header">Concluido</div>
+                <div id="item-concluido">
                 </div>
                 <div class="add" onclick="adicionar(3)">+ Adicionar cartão</div>
             </div>
