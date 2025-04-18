@@ -16,6 +16,8 @@
 }
 
 .titulo {
+    position: relative;
+    z-index: 5;
     font-family: "Poppins", sans-serif;
     color: black;
     font-size: 50px;
@@ -209,10 +211,10 @@
     color: black;
 }
 
-#descricao-item {
+/* #descricao-item {
     display: flex;
     color: black;
-}
+} */
 
 i {
     margin-right: 20px;
@@ -222,4 +224,52 @@ i {
 #descricao-concluido {
     display: flex;
     color: black;
+}
+
+.container-comentario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+#comentario {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#item-comentario {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 85%;
+    height: 85%;
+}
+
+.titulo2 {
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.x {
+    display: flex;
+    width: 100%;
+    margin: 10px 30px 0 0;
+    justify-content: right;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
 }

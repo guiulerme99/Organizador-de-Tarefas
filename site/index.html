@@ -15,10 +15,18 @@
 </head>
     <body>
         <div class="fundo"></div>
+        <section id="comentario">
+            <div class="container-comentario">
+                <div class="x" onclick="fechar(2)">X</div>
+                <div class="titulo2">Descrição detalhada</div> 
+                <div id="item-comentario">
+                </div>
+            </div>
+        </section>
         <section id="adicionar">
             <div class="container-adicionar">
                 <div class="titulo-adicionar">
-                    <div class="fechar" onclick="fechar()"><h1>X</h1></div>
+                    <div class="fechar" onclick="fechar(1)"><h1>X</h1></div>
                     <div class="abrir"><h1 id="valor-titulo"></h1></div>
                 </div>
                 <div class="campos">
@@ -63,13 +71,13 @@
                     <div id="item-fazer">
                     </div>
                     <div class="add" onclick="adicionar(1)">+ Adicionar cartão</div>
-            </div>
-            <div class="grid andamento">
-                <div class="header">Em andamento</div>
-                <div id="item-andamento">
                 </div>
-                <div class="add" onclick="adicionar(2)">+ Adicionar cartão</div>
-            </div>
+                <div class="grid andamento">
+                    <div class="header">Em andamento</div>
+                    <div id="item-andamento">
+                    </div>
+                    <div class="add" onclick="adicionar(2)">+ Adicionar cartão</div>
+                </div>
             <div class="grid concluido">
                 <div class="header">Concluido</div>
                 <div id="item-concluido">
